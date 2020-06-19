@@ -1,0 +1,194 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(246,212,198);
+    transition: background-color 5s ease-in-out;
+}
+
+.headQ{
+    margin: 0;
+    /* font-size: 5rem; */
+}
+
+#heading{
+    font-weight: 800;
+    font-size: 5.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    /* color: rgb(0,90,255); */
+    color: #111;
+    line-height: 100%;
+}
+
+#introText{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    /* color: rgb(0,90,255); */
+    color: #000;
+}
+
+#txtIn{
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    /* border: 2px solid rgb(0,90,255); */
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 1rem;
+    width: 12rem;
+    border-radius: 1px;
+    outline: none;
+    background-color: #eee;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+#btn{
+    padding: 10px 1rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+    /* background-color: rgb(0,90,255); */
+    background-color: #000;
+    color: #fff;
+    /* border: 2px solid rgb(0,90,255); */
+    border: 2px solid #000;;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+/* #btn:focus, #btn:active{
+    color: rgb(0,90,255);
+    background-color: #fff;
+} */
+
+#btn:disabled{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    cursor: none;
+}
+
+#formControl{
+    color: #fff;
+    padding: 2px 4px;
+    background-color: crimson;
+    width: 18.8rem;
+    line-height: 1rem;
+    border-radius: 2px;
+    /* text-shadow: 0 0 2px #FF0000; */
+    /* text-shadow: -1px 0 #f00, 0 1px #f00, 1px 0 #f00, 0 -1px #f00; */
+    letter-spacing: 0px;
+    font-size: 0.7rem;
+    visibility: hidden;
+    margin-left: 1rem;
+}
+
+#others{
+    margin-left: 1rem;
+    margin-bottom: 1.1rem;
+    margin-top: 2.2rem;
+    font-size: 1.6rem;
+    /* color: rgb(0,90,255); */
+    color: #000;
+    display: block;
+    /* visibility: hidden; */
+    opacity: 0;
+    font-weight: 800;
+    transition: opacity 0.5s ease-in;
+}
+
+#gotWords{
+    margin: 1rem 0.5rem 5rem 1rem;
+    /* color: rgb(0,90,255); */
+    color: #000;
+    padding-bottom: 2rem;
+    line-height: 1.6rem;
+    /* transition: background-color .5s ease-in-out; */
+    /* position: relative; */
+    /* visibility: hidden; */
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+#credits{
+    color: #222;
+    font-size: 0.7rem;
+    position: -webkit-fixed; /* Safari */
+    position: fixed;
+    transition: background-color 5s ease-in-out;
+    padding: 0.8rem 1rem 1.5rem 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    left : 0.5rem;
+    bottom: 0;
+    visibility: visible;
+    z-index: 5;
+}
+
+#credLink{
+    /* color: rgb(0,90,255); */
+    color: #000;
+}
+
+.curlyText{
+    /* color: rgb(0,90,255); */
+    color: #000;
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+  }
+  
+::selection {
+    color: white;
+    background: black;
+}
+
+#oneW{
+    text-decoration: none;
+    transition: text-decoration 0.5s ease-in;
+}
+
+#yolk{
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #heading{ 
+        margin-top: 1.2rem;
+        font-size: 3rem;
+    }
+    .headQ{
+        margin: 0;
+        font-size: 3rem;
+    }
+    #formControl{
+        width : 87%;
+    }
+    #txtIn{
+        margin-top: .5rem;
+    }
+    #others{
+        margin-top: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    #credits{
+        font-size: 0.6rem;
+        -webkit-font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #gotWords{
+        width : 75%;
+    }
+}
