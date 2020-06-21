@@ -246,7 +246,7 @@ async function callServer() {
         callLocationApi();
     }
 
-    setTimeout(getFromBackendNew, 500);
+    setTimeout(getFromBackendNew, 400);
 }
 
 async function callLocationApi() {
